@@ -1,10 +1,12 @@
+package com.DSA;
+
 public class PowerOfTheNumber {
     public static void main(String[] args) {
-            Mains sc = new Mains();
+            Mains1 sc = new Mains1();
             double res = sc.power(2,10);
             System.out.println(res);
 
-//        powerConcepts pows = new powerConcepts();
+//        com.DSA.powerConcepts pows = new com.DSA.powerConcepts();
 //        double myPow = pows.myPowMethod(2,10);
 //        System.out.println(myPow);
     }
@@ -28,7 +30,7 @@ class powerConcepts {
         return ans;
     }
 }
-class Mains {
+class Mains1 {
 
     // Recursive function to calculate pow(b, e)
     public  double power(double b, int e) {

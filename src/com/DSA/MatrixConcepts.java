@@ -1,4 +1,4 @@
-///     to Use The Array Built In Method Import Arrays
+package com.DSA; ///     to Use The Array Built In Method Import Arrays
 
 import java.util.Arrays;
 

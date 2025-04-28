@@ -1,3 +1,5 @@
+package com.NormalPractices;
+
 import java.util.Arrays;
 
 public class SetMatrixZeroes {
@@ -35,6 +37,7 @@ public class SetMatrixZeroes {
 
 class BruteForce {
     public int[][] getBruteForce(int[][] matrix, int len) {
+
         ///  Time Complexity O(n3 n cube) and Space Complexity will same as O(1)
 
         for (int row = 0; row < len; row++) {

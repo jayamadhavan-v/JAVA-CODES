@@ -1,3 +1,5 @@
+package com.DSA;
+
 import java.util.Scanner;
 
 class ReverseAnNumber {

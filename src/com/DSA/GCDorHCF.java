@@ -1,3 +1,5 @@
+package com.DSA;
+
 public class GCDorHCF {
     public static void main(String[] args) {
         int gcd = gcd(36,61);
