@@ -6,9 +6,9 @@ public class PowerOfTheNumber {
             double res = sc.power(2,10);
             System.out.println(res);
 
-//        com.DSA.powerConcepts pows = new com.DSA.powerConcepts();
-//        double myPow = pows.myPowMethod(2,10);
-//        System.out.println(myPow);
+        com.DSA.powerConcepts pows = new com.DSA.powerConcepts();
+        double myPow = pows.myPowMethod(2,10);
+        System.out.println(myPow);
     }
 }
 class powerConcepts {
