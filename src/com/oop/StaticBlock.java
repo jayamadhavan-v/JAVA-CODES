@@ -3,7 +3,7 @@ package com.oop;
 public class StaticBlock {
     static int a = 4;
     static int b;
-    int c  = 3;
+    static  int c  = 3;
 
     static {
 
@@ -13,7 +13,7 @@ public class StaticBlock {
     }
 
     public static void main(String[] args) {
-        StaticBlock obj = new StaticBlock();
+//        StaticBlock obj = new StaticBlock();
         System.out.println(StaticBlock.a + " " + StaticBlock.b);
         System.out.println();
         b+=3;
