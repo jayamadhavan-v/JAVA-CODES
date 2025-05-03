@@ -1,4 +1,4 @@
-package com.NormalPractices;
+package com.DSA;
 
 import java.util.Arrays;
 

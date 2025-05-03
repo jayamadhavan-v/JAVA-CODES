@@ -1,4 +1,4 @@
-package com.NormalPractices;
+package com.Basic_Problems;
 
 public class divisible {
     public static void main(String[] args) {
