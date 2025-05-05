@@ -2,7 +2,7 @@ package com.DSA_Prblm;
 
 import java.util.Scanner;
 
-///https://leetcode.com/problems/set-matrix-zeroes/description/
+///[...](https://leetcode.com/problems/set-matrix-zeroes/description/)
 public class Set_Matrix_Zero {
     public static void main(String[] args) {
         Set_Matrix_Zero r = new Set_Matrix_Zero();
