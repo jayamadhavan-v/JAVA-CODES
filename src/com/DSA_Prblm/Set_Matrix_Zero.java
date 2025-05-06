@@ -2,7 +2,8 @@ package com.DSA_Prblm;
 
 import java.util.Scanner;
 
-///[...](https://leetcode.com/problems/set-matrix-zeroes/description/)
+ ///[...](https://leetcode.com/problems/set-matrix-zeroes/description/)
+/// 05/may/2025
 public class Set_Matrix_Zero {
     public static void main(String[] args) {
         Set_Matrix_Zero r = new Set_Matrix_Zero();
@@ -39,12 +40,8 @@ public class Set_Matrix_Zero {
         return matrix;
     }
 }
-///steps to Solve  the Problem
-/// Step 1: Check if first row and first column have zeroes
-/// Step 2: Use first row and column as markers
-///  Step 3: Set cells to zero based on markers
-///  Step 4: Zero out first row if needed
-/// Step 5: Zero out first column if needed
+/// Optimal Solution
+
 class Solution {
     public int[][] optimalSolution(int[][] matrix ){
         int m = matrix.length;
@@ -102,7 +99,7 @@ class Solution {
         }
         return matrix;
     }
-
+ /// Better Solution TimeComplexity --> O(n)
     public int[][] betterSolution(int[][] mat) {
         int[] rowArr = new int[mat.length];
         int[] colArr = new int[mat[0].length]; // in case row and col are not for that
