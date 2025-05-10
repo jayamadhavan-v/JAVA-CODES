@@ -1,4 +1,4 @@
-package com.DSA;
+package com.DSA_Concepts;
 public class RecursionConcept {
     public static void main(String[] args) {
         message();

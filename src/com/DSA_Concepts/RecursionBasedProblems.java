@@ -1,4 +1,4 @@
-package com.DSA;
+package com.DSA_Concepts;
 public class RecursionBasedProblems {
     public static void main(String[] args) {
         int n =5;

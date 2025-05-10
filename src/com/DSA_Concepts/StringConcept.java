@@ -1,4 +1,4 @@
-package com.DSA;
+package com.DSA_Concepts;
 public class StringConcept {
     public static void main(String[] args) {
         String name = "jayamadhavan";

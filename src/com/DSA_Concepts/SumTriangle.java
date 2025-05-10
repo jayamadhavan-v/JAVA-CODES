@@ -1,5 +1,4 @@
-package com.DSA;
-import java.util.*;
+package com.DSA_Concepts;
 
 public class SumTriangle {
     public static void main(String[] args) {

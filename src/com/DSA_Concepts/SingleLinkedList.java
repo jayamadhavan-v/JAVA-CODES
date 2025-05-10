@@ -1,4 +1,4 @@
-package com.DSA;
+package com.DSA_Concepts;
 public class SingleLinkedList {
     public static class Node {
         int data;

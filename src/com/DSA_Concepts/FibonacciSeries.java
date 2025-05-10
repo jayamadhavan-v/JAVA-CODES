@@ -1,6 +1,4 @@
-package com.DSA;
-
-import java.util.Scanner;
+package com.DSA_Concepts;
 
 public class FibonacciSeries {
     public static void main(String[] args) {

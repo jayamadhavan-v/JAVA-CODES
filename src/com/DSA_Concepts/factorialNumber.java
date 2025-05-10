@@ -1,7 +1,4 @@
-package com.DSA;
-
-import java.util.ArrayList;
-import java.util.Scanner;
+package com.DSA_Concepts;
 
 public class factorialNumber {
     public static void main(String[] args) {

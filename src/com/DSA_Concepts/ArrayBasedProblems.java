@@ -1,12 +1,16 @@
-package com.DSA;
+package com.DSA_Concepts;
 
-import java.util.Arrays;
+import java.util.*;
+
+import static java.util.Arrays.sort;
 
 public class ArrayBasedProblems {
     public static void main(String[] args) {
         int [] arr = {-1,0,1,2,-1,-4};
         int target =0;
-        reverseTheArray(arr);
+        Arrays.sort(arr);
+        System.out.println(Arrays.toString(arr));
+//        reverseTheArray(arr);
 //        ArrayList<ArrayList<Integer>> list = new ArrayList<>();
 //        for (int i = 0; i < 3; i++) {
 //            list.add(new ArrayList<>());

@@ -1,4 +1,4 @@
-package com.DSA;
+package com.DSA_Concepts;
 public class LuckyNumber {
     public static void main(String[] args) {
         int lowerBound = 410;

@@ -1,4 +1,4 @@
-package com.DSA;
+package com.DSA_Concepts;
 
 public class PowerOfTheNumber {
     public static void main(String[] args) {
@@ -6,7 +6,7 @@ public class PowerOfTheNumber {
             double res = sc.power(2,10);
             System.out.println(res);
 
-        com.DSA.powerConcepts pows = new com.DSA.powerConcepts();
+        com.DSA_Concepts.powerConcepts pows = new com.DSA_Concepts.powerConcepts();
         double myPow = pows.myPowMethod(2,10);
         System.out.println(myPow);
     }
