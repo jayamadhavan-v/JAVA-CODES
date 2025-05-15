@@ -29,4 +29,14 @@ public class Tools {
         arr[first]= arr[second];
         arr[second]=temp;
     }
+    public static int getMin(int[] arr){
+        int min = Integer.MAX_VALUE;
+        if (arr.length == 0) {
+            return 0;
+        }
+        for (int i : arr){
+            min = Math.min(min,i);
+        }
+        return min;
+    }
 }
