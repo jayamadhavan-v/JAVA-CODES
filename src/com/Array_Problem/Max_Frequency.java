@@ -1,4 +1,4 @@
-package com.DSA_Prblm;
+package com.Array_Problem;
 import java.util.Arrays;
 
 public class Max_Frequency {

@@ -1,4 +1,4 @@
-package com.DSA_Prblm;
+package com.Array_Problem;
 
 public class Maximum_SubArray_Sum {
     public static void main(String[] args) {
