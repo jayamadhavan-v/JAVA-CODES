@@ -26,5 +26,6 @@ public class HashMapExample {
         // Removing an entry
         map.remove(1);
         System.out.println("Map after removal: " + map);
+
     }
 }

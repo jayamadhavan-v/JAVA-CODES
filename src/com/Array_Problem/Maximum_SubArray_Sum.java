@@ -2,8 +2,8 @@ package com.Array_Problem;
 
 public class Maximum_SubArray_Sum {
     public static void main(String[] args) {
-        int[] arr = {-22, -31, -4, -1, -2, -1, -1, -5, -3};
-        Maximum_SubArray_Sum.kadaneS_alg(arr);
+        int[] arr = {22, 31, 4, -1, -2, 1, -1, 5, -3};
+        kadaneS_alg(arr);
 
     }
 
@@ -22,7 +22,7 @@ public class Maximum_SubArray_Sum {
                 subArrayStarting = i + 1;
             }
         }
-        if (max < 0) {
+        if (max < 0) { // max is negative number means max will be zero only
             max = 0;
             System.out.println(max);
         } else {

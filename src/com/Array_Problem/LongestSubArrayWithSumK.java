@@ -5,7 +5,7 @@ public class LongestSubArrayWithSumK {
         int[] arr = {1, 2,3,1, 3, -1, 0, 1, -1,1,1,2, 2};
         int k = 4;// {1,2,3,1,1,1,4,2,3};
         getSubArray(arr, k);
-//        int c =getLongestSubarray(arr,k);
+//        int c =getLongestSubArray(arr,k);
 //        System.out.println(c);
     }
  ///  my approach but is wrong
@@ -28,7 +28,7 @@ public class LongestSubArrayWithSumK {
 
     }
 
-    public static int getLongestSubarray(int[] a, int k) {
+    public static int getLongestSubArray(int[] a, int k) {
         int n = a.length; // size of the array.
 
         int left = 0, right = 0; // 2 pointers
