@@ -1,5 +1,6 @@
 package com.Array_Problem;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
  ///[...](https://leetcode.com/problems/set-matrix-zeroes/description/)
@@ -7,9 +8,10 @@ import java.util.Scanner;
 public class Set_Matrix_Zero {
     public static void main(String[] args) {
         Set_Matrix_Zero r = new Set_Matrix_Zero();
-        int[][] matrix = r.matrixGetValue();
+        int[][] matrix = {{1,1,1},{1,0,1},{1,1,1}};
+                //r.matrixGetValue();
         Solution m = new Solution();
-        m.optimalSolution(matrix);
+//        m.optimalSolution(matrix);
         m.betterSolution(matrix);
     }
     public int[][] matrixGetValue() {
@@ -99,27 +101,32 @@ class Solution {
         }
         return matrix;
     }
+
+
  /// Better Solution TimeComplexity --> O(n)
-    public int[][] betterSolution(int[][] mat) {
+ ///
+    public void betterSolution(int[][] mat) {
         int[] rowArr = new int[mat.length];
-        int[] colArr = new int[mat[0].length]; // in case row and col are not for that
-//  ---> to find the zero and mark in array
-        for (int i = 0; i < mat.length; i++) { //control row
-            for (int j = 0; j < mat[0].length; j++) { // control column
+        ///in case row and col are not for that
+        int[] colArr = new int[mat[0].length];
+///  ---> to find the zero and mark in array
+        for (int i = 0; i < mat.length; i++) { ///control row
+            for (int j = 0; j < mat.length; j++) { /// control column
                 if (mat[i][j] == 0) {
-                    rowArr[i] = 0;
-                    colArr[j] = 0;
+                    rowArr[i] = 1;
+                    colArr[j] = 1;
                 }
             }
         }
-//  ---> covert the row and col into zero
+///  ---> covert the row and col into zero
         for (int i = 0; i < mat.length; i++) {
             for (int j = 0; j < mat[0].length; j++) {
-                if(rowArr[i]==0 || colArr[j] == 0){
+                if(rowArr[i]== 1 || colArr[j] == 1){
                     mat[i][j] = 0;
                 }
             }
         }
-        return mat;
+        System.out.println(Arrays.deepToString(mat));
+
     }
 }
