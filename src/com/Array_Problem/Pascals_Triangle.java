@@ -16,10 +16,10 @@ public class Pascals_Triangle {
             //        [...](https://leetcode.com/problems/pascals-triangle-ii/description/)
 
         printingPascal(5);
-        getpattern(5);
+        getPattern(5);
 
     }
-    public static void getpattern(int n){
+    public static void getPattern(int n){
         // row
         for (int row = 1 ; row < n ; row++){
             int res = 1;

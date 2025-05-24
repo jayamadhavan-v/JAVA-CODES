@@ -1,32 +1,14 @@
 package com.Array_Problem;
 
-public class LongestSubArrayWithSumK {
+public class Longest_SubArray_With_Sum_K {
     public static void main(String[] args) {
         int[] arr = {1, 2,3,1, 3, -1, 0, 1, -1,1,1,2, 2};
         int k = 4;// {1,2,3,1,1,1,4,2,3};
-        getSubArray(arr, k);
-//        int c =getLongestSubArray(arr,k);
-//        System.out.println(c);
-    }
- ///  my approach but is wrong
-    static void getSubArray(int[] arr, int k) {
-        int maxLen = 0, sum = 0;
-        int len = 0;
-        for (int i = 0; i < arr.length; i++) {
-            sum += arr[i];
-            len++;
-            if (sum == k) {
-                maxLen = Math.max(maxLen, len);
-                sum = 0;
-                len = 0;
-            } else if (sum > k) {
-                sum = 0;
-                len = 0;
-            }
-        }
-        System.out.println(maxLen);
 
+        int c =getLongestSubArray(arr,k);
+        System.out.println(c);
     }
+
 
     public static int getLongestSubArray(int[] a, int k) {
         int n = a.length; // size of the array.
@@ -49,7 +31,9 @@ public class LongestSubArrayWithSumK {
 
             // Move forward thw right pointer:
             right++;
-            if (right < n) sum += a[right];
+            if (right < n){
+                sum += a[right];
+            }
         }
 
         return maxLen;
