@@ -3,11 +3,11 @@ package com.Array_Problem;
 import java.util.HashMap;
 import java.util.Map;
 /// [....](https://leetcode.com/problems/majority-element/description/)
-public class MajorityOfTheNumberInArray {
+public class Majority_Of_The_Number_In_Array {
     public static void main(String[] args) {
         int[] nums = {2, 2,  2, 2,3, 3, 1,1,1,1};
 
-        getMajorityNO(nums);
+        getMajorityNO(nums); // using the n/2 array size
 
         // better Solution moore Voting Algorithm
 
@@ -41,7 +41,7 @@ public class MajorityOfTheNumberInArray {
             myMap.put(nums[i], myMap.getOrDefault(nums[i], 0) + 1);
         }
         for (Map.Entry<Integer,Integer> entry : myMap.entrySet()) {
-            if(entry.getValue()> nums.length/2){
+            if(entry.getValue()> nums.length/2 ){
                 System.out.println(entry.getKey());
             }
 

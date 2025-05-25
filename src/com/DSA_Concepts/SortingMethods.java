@@ -8,11 +8,11 @@ public class SortingMethods {
        int[] arr = {4,3,2,7,8,2,3,1};
 
         System.out.println(Arrays.toString(arr));
-//        bubble( arr);
-//        selectionSortByLongestElement( arr);
-//        selectionSortByMinElement(arr);
-//        insertionSort(arr);
-//        insertionSort2(arr);
+        bubble( arr);
+        selectionSortByLongestElement( arr);
+        selectionSortByMinElement(arr);
+        insertionSort(arr);
+        insertionSort2(arr);
           cyclicSort(arr);
         System.out.println(Arrays.toString(arr));
         findMissingNo(arr);
