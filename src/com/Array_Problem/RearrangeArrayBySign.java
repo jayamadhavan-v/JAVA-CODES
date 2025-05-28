@@ -10,7 +10,7 @@ public class RearrangeArrayBySign {
                 {3,1,-2,-5,2,-4,};
         // fist approach
 //        getRearrange(nums);
-        // second pproach
+        // second approach
         getRearrange2(nums);
         System.out.println();
         // third approach
