@@ -1,12 +1,12 @@
 package com.Array_Problem;
-
+/// [....](https://leetcode.com/problems/4sum/description/)
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Arrays;
 
 public class Four_Sum {
     public static void main(String []args){
-        int[] nums= {1, 0, -1, 0, -2, 2};
+        int[] nums = {1, 0, -1, 0, -2, 2};
         List<List<Integer>> fourSum = getFourSum(nums);
         System.out.println(fourSum);
     }
@@ -30,14 +30,15 @@ public class Four_Sum {
 
                 if(j>i+1 && nums[j] == nums[j-1]) continue;
 
-                // now using the left answer right concept from the Three sum
+        // now using the left answer right concept from the Three sum
 
-                int left = j+1; // i =0 j =1 so left = 3;
+                int left = j+1;
                 int right = nums.length-1;
 
                 while(left<right){
                     long sum = (long) nums[i]+nums[j]+nums[left]+nums[right];
                     if(sum == k) {
+
                         myList.add(Arrays.asList(nums[i], nums[j], nums[left], nums[right]));
 
                         // Skip duplicates for the second and third elements

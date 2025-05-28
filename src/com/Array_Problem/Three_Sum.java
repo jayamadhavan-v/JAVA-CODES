@@ -1,11 +1,12 @@
 package com.Array_Problem;
-
+///[...](https://leetcode.com/problems/3sum/description/)
 import java.util.ArrayList;
 import java.util.Arrays;
 //import java.util.HashMap;
 import java.util.List;
 
-public class ThreeSum {
+
+public class Three_Sum {
     public static void main(String[] args) {
         int[] nums={-1,0,1,2,-1,-4};
         int k = 0;
