@@ -1,5 +1,8 @@
 package com.stack;
 
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.Queue;
 import java.util.Stack;
 
 public class StackToQueue {
@@ -15,6 +18,10 @@ public class StackToQueue {
              s.push(i);
          }
          //declaration queue
-
+        Queue<Integer> q = new LinkedList<>(s);
+//         for (int ele : s){
+//             q.add(ele);
+//         }
+        System.out.println(q);
     }
 }
