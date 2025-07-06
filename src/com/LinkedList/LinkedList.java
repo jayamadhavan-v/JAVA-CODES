@@ -1,26 +1,26 @@
 package com.LinkedList;
 
-class Node {
+class Node<T> {
     /// Instances Variables
-    int data;
-    Node next;
+     T data;
+    Node<T> next;
 
     /// constructor
-    Node(int data) {
+    Node(T data) {
         this.data = data;
         this.next = null;
     }
 }
 
-public class LinkedList {
+public class LinkedList<T> {
     ///  Instances variable
     /// head will carry a First Node Address
-    Node head;
+    Node<T> head;
 
     /// Insert At End
-    public void insert(int data) {
+    public void insert(T data) {
         // Creating a New Node
-        Node newNode = new Node(data);
+        Node<T> newNode = new  Node<>(data);
 
         if (head == null) { // for First node
             head = newNode;
@@ -30,7 +30,7 @@ public class LinkedList {
         // Up to the End Of the List
         // so for Traversal using the {current}
 
-        Node current = head;
+        Node<T> current = head;
         // traversal to Last Node
         while (current.next != null) {
             current = current.next;
@@ -43,12 +43,12 @@ public class LinkedList {
     }
 
     ///  Insert at the Beginning
-    public void insertAtBeginning(int data) {
+    public void insertAtBeginning(T data) {
         //if it is not first then it will execute
         // otherwise it will call the insert
         if (head != null) {
             // Creating a New Node
-            Node newNode = new Node(data);
+            Node<T> newNode = new Node<>(data);
             newNode.next = head;
             head = newNode;
             return;
@@ -59,7 +59,7 @@ public class LinkedList {
     ///  Print the List
     public void printList() {
         // for traversal creating a node variable current
-        Node current = head;
+        Node<T> current = head;
         while (current != null) {
             System.out.print(current.data + " -> ");
             current = current.next;
@@ -69,17 +69,17 @@ public class LinkedList {
     }
 
     /// insertInGivenPos
-    public void insertInGivenPos(int data, int pos) {
+    public void insertInGivenPos(T data, int pos) {
         if (pos == 1) {
             insertAtBeginning(data);
             return;
         }
 
         // Creating a New Node
-        Node newNode = new Node(data);
+        Node<T> newNode = new  Node<>(data);
 
         //traversal before the given Position
-        Node current = head;
+        Node<T> current = head;
         for (int i = 2; i < pos; i++) {
             current = current.next;
         }
@@ -93,7 +93,7 @@ public class LinkedList {
     }
 
     public void deleteInLast() {
-        Node current = head;
+        Node<T> current = head;
         while(current.next.next != null){
 //            System.out.print(current.data);
             current = current.next;
@@ -107,7 +107,7 @@ public class LinkedList {
             deleteInFirst();
             return;
         }
-        Node current  = head;
+        Node<T> current  = head;
         for (int i = 2; i < pos; i++) {
             current = current.next;
         }
@@ -122,11 +122,26 @@ public class LinkedList {
         if(head==null){
             return size;
         }
-        Node current = head;
+        Node<T> current = head;
         while(current != null){
             size++;
             current =current.next;
         }
         return size;
+    }
+
+    public boolean getElement(T e) {
+
+       if(head == null){
+           return false;
+       }
+       Node<T> current = head;
+       while(current != null ){
+           if(current.data == e){
+               return true;
+           }
+           current = current.next;
+       }
+       return false;
     }
 }

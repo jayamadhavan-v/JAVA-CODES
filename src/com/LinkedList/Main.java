@@ -2,14 +2,14 @@ package com.LinkedList;
 
 public class Main {
     public static void main(String[] args) {
-        LinkedList ll = new LinkedList();
-        ll.insert(2);
-        ll.insert(3);
-        ll.insert(4);
-        ll.insert(5);
-        ll.insertAtBeginning(1);
+        LinkedList<Character> ll = new LinkedList<>();
+        ll.insert('c');
+        ll.insert('f');
+        ll.insert('t');
+        ll.insert('r');
+        ll.insertAtBeginning('t');
         ll.printList();
-        ll.insertInGivenPos(0,1);
+        ll.insertInGivenPos('p',1);
 //        ll.printList();
 //        ll.deleteInFirst();
         ll.printList();
