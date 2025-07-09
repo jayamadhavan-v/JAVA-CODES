@@ -20,7 +20,7 @@ public class LinkedList<T> {
     /// Insert At End
     public void insert(T data) {
         // Creating a New Node
-        Node<T> newNode = new  Node<>(data);
+        Node<T> newNode = new Node<>(data);
 
         if (head == null) { // for First node
             head = newNode;
@@ -76,7 +76,7 @@ public class LinkedList<T> {
         }
 
         // Creating a New Node
-        Node<T> newNode = new  Node<>(data);
+        Node<T> newNode = new Node<>(data);
 
         //traversal before the given Position
         Node<T> current = head;
@@ -94,7 +94,7 @@ public class LinkedList<T> {
 
     public void deleteInLast() {
         Node<T> current = head;
-        while(current.next.next != null){
+        while (current.next.next != null) {
 //            System.out.print(current.data);
             current = current.next;
         }
@@ -103,45 +103,49 @@ public class LinkedList<T> {
     }
 
     public void deleteInPos(int pos) {
-        if(pos == 1){
+        if (pos == 1) {
             deleteInFirst();
             return;
         }
-        Node<T> current  = head;
+        Node<T> current = head;
         for (int i = 2; i < pos; i++) {
             current = current.next;
         }
         current.next = current.next.next;
     }
+
     /// delete all in the LinkedList
     public void deleteAll() {
         head = null;  // This removes reference to the entire list
     }
-    public int size(){
+
+    public int size() {
         int size = 0;
-        if(head==null){
+        if (head == null) {
             return size;
         }
         Node<T> current = head;
-        while(current != null){
+        while (current != null) {
             size++;
-            current =current.next;
+            current = current.next;
         }
         return size;
     }
 
     public boolean getElement(T e) {
 
-       if(head == null){
-           return false;
-       }
-       Node<T> current = head;
-       while(current != null ){
-           if(current.data == e){
-               return true;
-           }
-           current = current.next;
-       }
-       return false;
+        if (head == null) {
+            return false;
+        }
+        Node<T> current = head;
+        while (current != null) {
+            if (current.data == e) {
+                return true;
+            }
+            current = current.next;
+        }
+        return false;
     }
+
+
 }

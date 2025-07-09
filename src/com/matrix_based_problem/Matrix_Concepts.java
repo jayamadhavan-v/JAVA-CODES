@@ -1,4 +1,4 @@
-package com.DSA_Concepts;
+package com.matrix_based_problem;
 ///     to Use The Array Built In Method Import Arrays
 
 import java.util.Arrays;

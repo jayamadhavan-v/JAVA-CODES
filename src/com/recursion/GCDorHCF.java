@@ -1,4 +1,4 @@
-package com.DSA_Concepts;
+package com.recursion;
 
 public class GCDorHCF {
     public static void main(String[] args) {

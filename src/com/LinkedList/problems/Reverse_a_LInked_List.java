@@ -9,6 +9,6 @@ public class Reverse_a_LInked_List {
             ll.insert(i);
         }
         ll.printList();
-
+        ///
     }
 }
