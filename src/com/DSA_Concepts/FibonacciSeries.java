@@ -5,11 +5,11 @@ public class FibonacciSeries {
 //        Scanner sc = new Scanner(System.in);
 //        System.out.print("Enter a value of n: ");
 //        int input = sc.nextInt();
-          int input = 50;
-        System.out.println(recursionFibo(input));
+          int input = 3;
+//        System.out.println(recursionFibo(input));
 
-//        int fibo =normalMethod(input);
-//        System.out.println(fibo);
+        int fibo =normalMethod(input);
+        System.out.println(fibo);
     }
 
     public static int normalMethod(int n) {
