@@ -2,7 +2,7 @@ package com.Array_Problem;
 
 import java.util.Arrays;
 
-import static com.Array_Problem.Tools.swapMethod;
+import static com.DSA_Concepts.SortingMethods.swapMethod;
 
 /// [...](https://leetcode.com/problems/move-zeroes/)
 public class MovesZeroes {

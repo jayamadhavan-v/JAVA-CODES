@@ -1,10 +1,9 @@
 package com.Array_Problem;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.HashMap;
 
-import static com.Array_Problem.Tools.getMax;
+import static com.Tools.getMax;
 
 public class UnionOfTwoSortedArrays {
     public static void main(String[] args) {

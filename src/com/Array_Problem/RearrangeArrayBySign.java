@@ -1,7 +1,7 @@
 package com.Array_Problem;
 
 import java.util.Arrays;
-import static com.Array_Problem.Tools.swapMethod;
+import static com.Tools.swapMethod;
 /// [......](https://leetcode.com/problems/rearrange-array-elements-by-sign/description/)
 public class RearrangeArrayBySign {
     public static void main(String[] args) {

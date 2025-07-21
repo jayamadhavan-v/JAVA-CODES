@@ -1,4 +1,4 @@
-package com.Array_Problem;
+package com;
 
 public class Tools {
     int[] arr;
@@ -24,7 +24,7 @@ public class Tools {
         }
         return max;
     }
-    static void swapMethod(int[] arr,int first,int second){
+    public static void swapMethod(int[] arr, int first, int second){
         int temp = arr[first];
         arr[first]= arr[second];
         arr[second]=temp;
@@ -38,5 +38,19 @@ public class Tools {
             min = Math.min(min,i);
         }
         return min;
+    }
+    public static int getMaxIndex(int[] arr,int len){
+        int max = Integer.MIN_VALUE;
+        int maxIndex = -1;
+        if (len == 0) {
+            return 0;
+        }
+        for (int i = 0; i <= len; i++) {
+            if(max<arr[i]){
+                max =arr[i];
+                maxIndex=i;
+            }
+        }
+        return maxIndex;
     }
 }
