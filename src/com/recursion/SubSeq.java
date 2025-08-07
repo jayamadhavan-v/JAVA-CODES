@@ -30,7 +30,7 @@ public class SubSeq {
         ///  keep the ch - left
         ArrayList<String> left = (subSeq(p + ch, up.substring(1)));
 
-        ArrayList<String> middle = (subSeq(p + ch, up.substring(1)));
+
         ///  removing the ch
         ArrayList<String> right = (subSeq(p, up.substring(1)));
 
