@@ -55,7 +55,7 @@ public class OOP_concepts {
         float cgpa;
 
 
-        ///   step 2 define a construct to receive the value from the main class
+        ///   step 2 define a construct to receive the value from the filerWriterConcept class
         Student() { //--> its default constructor
 
             ///     construct is the special function ,

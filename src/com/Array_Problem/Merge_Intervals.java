@@ -7,7 +7,7 @@
 ///// [leetcode](https://leetcode.com/problems/merge-intervals/description/)
 //public class Merge_Intervals {
 //    //Merge Overlapping SubInterval
-//    public static void main(String[] args) {
+//    public static void filerWriterConcept(String[] args) {
 //        int[][] arr = {
 //                {1, 3},
 //                {2,6},

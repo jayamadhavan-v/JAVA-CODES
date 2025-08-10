@@ -4,7 +4,7 @@
 //
 //
 //public class Slow_Fast_Pointer {
-//    public static void main(String[] args) {
+//    public static void filerWriterConcept(String[] args) {
 //        LinkedList ll = new LinkedList();
 //        for (int i = 1; i <= 6; i++) {
 //            ll.insert(i);

@@ -55,7 +55,7 @@ public class UdemyNodes {
              displayHighScorePosition(playerNames[i],highScorePosition);
          }
 
-    }///end of main psvm
+    }///end of filerWriterConcept psvm
     public static void displayHighScorePosition(String playerName, int highScorePosition){
         System.out.println( playerName + " managed to get into position " +
                 highScorePosition + " on the high score list");

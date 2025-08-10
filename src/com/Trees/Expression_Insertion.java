@@ -98,7 +98,7 @@ public class InOrder{
         return temp;
     }
 
-    public static void main(String[] args) {
+    public static void filerWriterConcept(String[] args) {
         InOrder tree = new InOrder();
 
         // root
