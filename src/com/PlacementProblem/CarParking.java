@@ -62,7 +62,7 @@ public class CarParking {
             if (!isThere) {
                 carlist.add(carNo);
                 oS++;
-                System.out.println("Car parked at position : " + carlist.size());  // ✅ Fix output
+                System.out.println("Car parked at position : " + carlist.size());
             } else {
                 System.out.println("Car already parked");
             }
