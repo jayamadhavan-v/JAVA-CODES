@@ -1,0 +1,92 @@
+✅ What is a Class?
+
+    A class is a blueprint or template. It defines how an object should look (properties) and behave (methods).
+
+✅ What is an Object?
+
+    An object is a real-world entity created from a class.
+
+-->Example in real life:
+
+Class: Car (blueprint)
+
+Objects: BMW, Audi, Ferrari (real cars made from blueprint)
+
+✅ Constructors in Java:
+    A constructor is a special method used to initialize objects.
+It runs automatically when an object is created.
+
+✅ Types of Constructors
+
+    Default Constructor – Provided by Java automatically
+
+    No-arg Constructor – Created by programmer without parameters
+
+    Parameterized Constructor – With parameters
+
+✅ "this" Keyword in Java:
+    -->The this keyword is a very important OOP concept in Java.
+It refers to the current object.
+    -->Here, both variables refer to the local parameters,
+not class variables — so object variables remain null and 0.
+
+✅ static Keyword in Java:
+    static means “belongs to the class, not to an object.”
+    That means all objects share the same static member.
+
+⚠️ Important Rules
+
+Static methods can’t access non-static variables directly
+(because they belong to the class, not to an object)
+
+You can call a static variable like
+→ Student.collegeName
+
+🧱  Encapsulation:
+
+        Encapsulation means wrapping data and methods together
+inside a class and restricting direct access to the data.
+        private access and allow changes only through methods.
+        -->It protects data from being set to invalid or harmful values.
+        -->It controls access, so only trusted methods (with checks)
+can modify it.
+
+🧱  Inheritance in Java:
+💡 Simple Definition:
+
+Inheritance allows a class to acquire properties and methods of another class.
+Think of it as “child class inherits from parent class.”
+
+✅ super():
+    super() always calls the parent class constructor first — that’s how inheritance
+ensures the parent part of the object is built before the child part.
+
+ 🧩 Hierarchical Inheritance :
+      When multiple child classes inherit from the same parent class,
+ it’s called hierarchical inheritance.
+
+ 🧩 POLYMORPHISM
+ 💡 Simple meaning:
+
+ “Poly” = many, “Morphism” = forms
+ So Polymorphism means many forms.
+
+        It allows the same method name or object reference
+ to behave differently based on the object type.
+
+
+1️⃣ Abstraction
+    Abstraction is hiding the implementation details and
+ showing only the functionality.
+
+How in Java?
+    Use abstract classes or interfaces
+    Can have abstract methods (no body) that child classes must implement
+
+✅ Key Point:
+    You cannot create an object of abstract class Person.
+    You can only create objects of concrete child classes.
+
+2️⃣ Interface
+        Interface defines a contract that implementing classes must follow.
+

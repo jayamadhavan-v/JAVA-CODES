@@ -5,6 +5,7 @@ public class Tools {
     int first;
     int second ;
 
+    //constructors
 
     Tools(int[] arr) {
         this.arr = arr;
